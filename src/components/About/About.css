@@ -1,0 +1,24 @@
+.myImg {
+    max-width: 30vh;
+    transition: 1s ease;
+  
+}
+
+@media screen and (max-width: 414px) {
+    .myImg{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .myImg{
+        width: 20vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .myImg{
+        width: 20vh;
+    }
+}
+

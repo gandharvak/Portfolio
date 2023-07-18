@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+:root {
+  --primary: #2F1C6A;
+  --text: #36344D;
+  --button: #673DE6;
+  --hover: #6610f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.c-primary{
+  color: var(--primary);
+}
+
+.c-text{
+  color: var(--text);
+}
+
+.c-button{
+  color: var(--button);
+}
+
+.c-hover{
+  color: var(--hover);
+}
+
+.b-primary{
+  background-color: var(--primary);
+}
+
+.b-text{
+  background-color: var(--text);
+}
+
+.b-button{
+  background-color: var(--button);
+}
+
+.b-hover{
+  background-color: var(--hover);
+}
+
+
+a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.my-btn:hover {
+  background-color: transparent;
+  color: var(--hero);
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+/* CSS */
+.button-18 {
+  text-decoration: none;
+  align-items: center;
+  background-color: var(--button);
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: var(--hover);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+  .button-18{
+    max-width: 10.2rem;
+    font-size: 0.9rem;
+  }
+}

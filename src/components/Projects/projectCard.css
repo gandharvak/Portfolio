@@ -1,0 +1,49 @@
+.projectCard{
+    width: 20rem;
+    height: 25rem;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+}
+.demo{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projectImage{
+    width: 20rem;
+}
+
+@media screen and (max-width: 320px) {
+    .projectCard{
+        width: 90vw;
+    }
+
+    .projectImage{
+        width: 90vw;
+    }
+
+    .projectRender{
+        justify-content: center;
+    }
+    .button-18{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projectCard{
+        height: 63vh;
+    }
+    .projectRender{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .projectRender{
+        justify-content: center;
+    }
+}

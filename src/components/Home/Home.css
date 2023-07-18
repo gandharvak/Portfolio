@@ -1,0 +1,34 @@
+#intro span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+
+.heroimage {
+    width: 50vh;
+}
+
+@media screen and (max-width: 767px) {
+    .heroimage {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .heroimage {
+        width: 20vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .heroimage {
+        width: 25vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .my-btn {
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,23 @@
+.top-nav {
+  background-color: white;
+}
+
+.social-link {
+  color: var(--text);
+  transition: all 0.2s linear;
+
+}
+
+.social-link:hover {
+  color: var(--hover);
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .menu-icon{
+    display: block;
+  }
+  }

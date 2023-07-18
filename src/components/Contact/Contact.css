@@ -1,0 +1,39 @@
+
+form{
+    width: 70%;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: .1rem solid var(--button);
+    color: var(--primary);
+}
+.form-control{
+    color: var(--primary);
+}
+
+.alert-box{
+    position: fixed;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.alert-danger{
+    background-color: rgba(207,46,46, .8);
+    border: none;
+    color: white;
+}
+.alert-success{
+    background-color: rgba(0,208,130, .8);
+    border: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 992px) {
+form{
+    width: 100%;
+}
+}
