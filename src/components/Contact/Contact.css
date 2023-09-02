@@ -1,4 +1,6 @@
-
+.section-4{
+    background-color: var(--color-black-secondary);
+}
 form{
     width: 70%;
 }
@@ -6,10 +8,17 @@ form{
 .form-control:focus{
     box-shadow: none;
     border: .1rem solid var(--button);
-    color: var(--primary);
+    color: var(--color-orange);
+    background-color: var(--color-black);
 }
 .form-control{
-    color: var(--primary);
+    background-color: var(--color-black);
+    border: none;
+    color: var(--color-white);
+}
+
+.form-control::placeholder{
+    color: var(--color-white);
 }
 
 .alert-box{
@@ -18,11 +27,12 @@ form{
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
+
 }
 .alert-danger{
-    background-color: rgba(207,46,46, .8);
-    border: none;
-    color: white;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
 }
 .alert-success{
     background-color: rgba(0,208,130, .8);

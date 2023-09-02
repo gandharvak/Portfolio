@@ -1,3 +1,6 @@
+.section-3{
+    background-color: var(--color-black-secondary);
+}
 .contain{
     display: flex;
     gap: 3rem;
@@ -10,8 +13,6 @@
     display: none;
   }
 
-
-  
 .cardiv{
     padding: 1rem 3rem;
     display: flex;
@@ -19,7 +20,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: var(--color-black);
 }
 
 .snaps-inline{
@@ -34,7 +35,7 @@
 .scroll-btn{
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    background-color: var(--color-orange);
     color: var(--primary);
     border: none;
     border-radius: 50%;
@@ -56,6 +57,7 @@
 
 .scroll{
     position: relative;
+    
 }
 
 @media screen and (max-width: 414px) {

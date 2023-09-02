@@ -52,7 +52,8 @@ const Contact = () => {
     }
   }
   return (
-    <section className='section-4' id='contact'>
+    <section className='section-4 py-5' id='contact'>
+      <div className='container'>
       {error &&
         <div className="alert animate__animated animate__fadeIn alert-danger alert-box" role="alert">
           Enter Valid Email or Name
@@ -67,7 +68,7 @@ const Contact = () => {
         <div className="alert animate__animated animate__fadeIn alert-info alert-box" role="alert">
           An Error Occured!
         </div>}
-      <hr></hr>
+
       <h1 className='text-left c-primary'>Contact</h1>
       <form className=''>
         <div className="mb-3 m-auto">
@@ -86,6 +87,8 @@ const Contact = () => {
           <a className='button-18' onClick={submitResponse}> <IoMdSend className='me-2'/> <span>Contact Me</span></a>
         </div>
       </form>
+      </div>
+      
     </section>
   )
 }

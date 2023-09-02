@@ -11,8 +11,7 @@ import { CgWebsite } from "react-icons/cg";
 
 const FloatingNav = () => {
   return (
-    <div className='floating-nav d-flex' href="#">
-
+    <div className='floating-nav d-flex justify-content-evenly' href="#">
       <a className="nav-link hover" href="#">
         <AiFillHome className='mx-3 pointer navIcons' />
       </a>

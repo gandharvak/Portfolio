@@ -1,8 +1,9 @@
 .projectCard{
     width: 20rem;
     height: 25rem;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--color-white);
+    background-color: var(--color-black-secondary);
+    border-radius: 10px;
     position: relative;
 }
 .demo{
@@ -15,6 +16,7 @@
 .projectImage{
     width: 20rem;
 }
+
 
 @media screen and (max-width: 320px) {
     .projectCard{
@@ -35,7 +37,7 @@
 
 @media screen and (max-width: 375px) {
     .projectCard{
-        height: 63vh;
+        height: 25rem;
     }
     .projectRender{
         justify-content: center;

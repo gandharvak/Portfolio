@@ -5,8 +5,8 @@ import './projectCard.css'
 
 const Projects = () => {
     return (
-        <div id='projects'>
-            <hr></hr>
+        <section className='py-5' id='projects'>
+            <div className='container'>
             <h1 className='text-left c-primary'>Projects</h1>
             <div className='d-flex gap-4 flex-wrap projectRender'>
                 {
@@ -17,7 +17,8 @@ const Projects = () => {
                     })
                 }
             </div>
-        </div>
+            </div>
+        </section>
     )
 }
 

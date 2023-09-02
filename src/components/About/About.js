@@ -4,8 +4,8 @@ import './About.css'
 
 const About = () => {
   return (
-    <section className='section-2' id='about'>
-      <hr></hr>
+    <section className='section-2 py-5' id='about'>
+      <div className='container'>
       <h1 className='text-left c-primary'>About Me</h1>
       <div className='row d-flex align-item-center'>
 
@@ -27,6 +27,8 @@ const About = () => {
           <img src={MyImage} className="myImg" alt="developer" />
         </div>
       </div>
+      </div>
+      
     </section>
   )
 }

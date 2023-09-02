@@ -1,16 +1,21 @@
 .top-nav {
-  background-color: white;
+  width: 100%;
+  z-index: 111;
+  background-color: var(--color-black-secondary);
 }
 
 .social-link {
-  color: var(--text);
   transition: all 0.2s linear;
-
+  color: var(--color-white);
+}
+.navbar-brand{
+  color: var(--color-white);
+}
+.navbar-brand:hover,
+.social-link:hover{
+  color: var(--color-orange);
 }
 
-.social-link:hover {
-  color: var(--hover);
-}
 
 .menu-icon {
   display: none;
@@ -20,4 +25,4 @@
   .menu-icon{
     display: block;
   }
-  }
+}

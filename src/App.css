@@ -2,10 +2,13 @@
 
 
 :root {
-  --primary: #2F1C6A;
-  --text: #36344D;
-  --button: #673DE6;
-  --hover: #6610f2;
+  --background : #f5f6f7;
+  --color-orange: #e66810;
+  --color-orange-secondary: #f27025;
+  --color-black: #282828;
+  --color-black-secondary: #242424;
+  --color-white: #fff;
+  --color-red: #ff4646;
 }
 
 * {
@@ -13,41 +16,13 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
 
 html {
   scroll-behavior: smooth;
-}
-
-.c-primary{
-  color: var(--primary);
-}
-
-.c-text{
-  color: var(--text);
-}
-
-.c-button{
-  color: var(--button);
-}
-
-.c-hover{
-  color: var(--hover);
-}
-
-.b-primary{
-  background-color: var(--primary);
-}
-
-.b-text{
-  background-color: var(--text);
-}
-
-.b-button{
-  background-color: var(--button);
-}
-
-.b-hover{
-  background-color: var(--hover);
 }
 
 
@@ -65,11 +40,6 @@ h1 {
   font-size: 2rem;
 }
 
-.my-btn:hover {
-  background-color: transparent;
-  color: var(--hero);
-}
-
 .pointer{
   cursor: pointer;
 }
@@ -79,9 +49,8 @@ h1 {
 .button-18 {
   text-decoration: none;
   align-items: center;
-  background-color: var(--button);
+  background-color: var(--color-orange);
   border: 0;
-  border-radius: 100px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -105,8 +74,9 @@ h1 {
 
 .button-18:hover,
 .button-18:focus { 
-  background-color: var(--hover);
-  color: #ffffff;
+  background-color: transparent;
+  color: var(--color-orange-secondary);
+  outline: 1px solid var(--color-orange);
 }
 
 @media screen and (max-width: 320px) {

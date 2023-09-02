@@ -1,43 +1,37 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css';
-import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import FloatingNav from './components/Floating Nav/FloatingNav';
 
-import Scroll from './components/Scroll';
+import Learnings from './components/Learnings/Learnings';
 import Projects from './components/Projects/Projects';
 import TopNav from './components/Top Nav/TopNav';
-import { useRef } from 'react';
-import { useEffect } from 'react';
-import Menu from './components/Menu/Menu';
+import HomeTwo from './components/New Home/HomeTwo';
 
 function App() {
-  const [shadow, setShadow] = useState("")
+  const [shadow, setShadow] = useState(false);
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            setShadow("shadow")
-        } else {
-          setShadow("");
-        }
+      if (window.scrollY > 850) {
+        setShadow(true)
+      } else {
+        setShadow(false);
+      }
     });
-}, []);
-
+  }, [])
   return (
-    <div>
-      <TopNav shadow={shadow}/>
-      <FloatingNav/>
-      <div className='container'>
-        <Home />
-        <About />
-        <Scroll />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </div>
+    <><TopNav shadow={shadow}/>
+          <HomeTwo />
+        <FloatingNav />
+          <About />
+          <Learnings />
+          <Projects />
+          <Contact />
+          <Footer />
+    </>
   );
 }
 
