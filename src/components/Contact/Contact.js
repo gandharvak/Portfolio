@@ -84,7 +84,7 @@ const Contact = () => {
           <textarea className="form-control" id="message" rows="3" required placeholder='Message' name='message' value={mailDetails.message} onChange={handleChange}></textarea>
         </div>
         <div className="mb-3 m-auto">
-          <a className='button-18' onClick={submitResponse}> <IoMdSend className='me-2'/> <span>Contact Me</span></a>
+          <a className='button-18' id="contact-btn" onClick={submitResponse}> <IoMdSend className='me-2'/> <span>Contact Me</span></a>
         </div>
       </form>
       </div>
